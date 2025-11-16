@@ -1,0 +1,23 @@
+/* 
+  - Mobile: 375px
+  - Desktop: 1440px
+ */
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  --originalBlue800: hsl(234, 29%, 20%);
+  --originalBlue700: hsl(235, 18%, 26%);
+  --originalGrey: hsl(0, 0%, 58%);
+  --originalWhite: hsl(0, 0%, 100%);
+  --primaryRed: hsl(4, 100%, 67%);
+}
+
+body {
+  background-color: var(--originalBlue800);
+  color: var(--originalBlue800);
+}
+
+.form-container {
+  background-color: var(--originalWhite);
+}
