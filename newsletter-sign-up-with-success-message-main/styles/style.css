@@ -33,8 +33,8 @@ body {
 
 .form-container {
   background-color: var(--originalWhite);
-  width: 50%;
-  height: 60%;
+  width: 65%;
+  max-width: 900px;
   border-radius: 25px;
   display: flex;
   flex-direction: row;
@@ -46,16 +46,75 @@ body {
   min-width: 0;
 
   height: 100%;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 #form-text {
   width: 100%;
+  margin-left: 1.3rem;
+}
+
+#form-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--originalBlue800);
+}
+
+#form-text>p {
+  font-size: 0.95rem;
+  color: var(--originalBlue700);
+}
+
+#form-text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+#form-text ul li {
+  background-image: url("/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0.25rem;
+  background-size: 18px 18px;
+
+  padding-left: 1.6rem;
+  margin-bottom: 0.75rem;
+
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--originalBlue800);
+}
+
+#form-text label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--originalBlue800);
+}
+
+#form-text input[type="email"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 85%);
+  font-size: 0.9rem;
+  color: var(--originalBlue800);
+  margin-bottom: 1rem;
+}
+
+#form-text input[type="email"]::placeholder {
+  color: var(--originalGrey);
+}
+
+#form-text input[type="email"]:focus {
+  outline: none;
+  border-color: var(--originalBlue800);
 }
 
 #desktop-image {
@@ -69,7 +128,6 @@ body {
 
 #desktop-image img {
   max-width: 100%;
-  /* max-height: 100%; */
   object-fit: contain;
   display: block;
 }
