@@ -1,10 +1,10 @@
 /*
   - Mobile: 375px
   - Desktop: 1440px
- */
+*/
 
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   --originalBlue800: hsl(234, 29%, 20%);
   --originalBlue700: hsl(235, 18%, 26%);
@@ -20,9 +20,10 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--originalBlue800);
-  width: 98vw;
-  height: 98vh;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   color: var(--originalBlue800);
   display: flex;
@@ -124,6 +125,8 @@ button {
   color: var(--originalWhite);
   border: none;
   border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
 }
 
 button:hover {
@@ -144,4 +147,41 @@ button:hover {
   max-width: 100%;
   object-fit: contain;
   display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#success-card.hidden {
+  display: none;
+}
+
+#success-card {
+  background: var(--originalWhite);
+  width: 420px;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-content h1 {
+  color: var(--originalBlue800);
+  margin: 1.5rem 0 1rem;
+  font-size: 2rem;
+}
+
+.success-content p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--originalBlue700);
+  margin-bottom: 1.5rem;
+}
+
+#success-icon {
+  width: 48px;
 }

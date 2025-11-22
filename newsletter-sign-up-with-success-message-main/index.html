@@ -2,22 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
   <title>Newsletter sign-up</title>
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
-
   <div class="form-container">
     <div class="form-column" id="form-text">
-      <h1 id="heading">
-        Stay updated!
-      </h1>
+      <h1 id="heading">Stay updated!</h1>
 
       <p id="subheading">
         Join 60,000+ product managers receiving monthly updates on:
@@ -28,33 +26,36 @@
         <li>And much more!</li>
       </ul>
 
-      <label for="email" class="form-label">
-        Email address
-      </label>
-      <input type="email" id="email" name="email" placeholder="email@email.com" required>
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" id="email" name="email" placeholder="email@email.com" required />
 
-      <button type="submit" id="submit-button">
+      <button type="button" id="submit-button">
         Subscribe to monthly newsletter
       </button>
     </div>
 
     <div class="form-column">
       <div id="desktop-image">
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign up illustration">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Sign up illustration" />
       </div>
     </div>
   </div>
 
-  <!-- Sign-up form end -->
+  <div id="success-card" class="hidden">
+    <div class="success-content">
+      <img src="./assets/images/icon-success.svg" alt="Success" id="success-icon" />
 
-  <!-- Success message start -->
+      <h1>Thanks for subscribing!</h1>
 
-  Thanks for subscribing!
+      <p>
+        A confirmation email has been sent to
+        <strong id="user-email"></strong>. Please open it and click the button
+        inside to confirm your subscription.
+      </p>
 
-  A confirmation email has been sent to ash@loremcompany.com.
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
+      <button type="button" id="dismiss-button">Dismiss message</button>
+    </div>
+  </div>
 </body>
 
 </html>
